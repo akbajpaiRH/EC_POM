@@ -4,7 +4,7 @@ import com.microsoft.playwright.*;
 public class HomePage {
 	private Page page;
 	private String search = "input.pf-c-search-input__text-input";
-	private String header = "h1.data-ouia-component-type";
+	private String header = "//h1[@data-ouia-component-type='PF4/Text']";
 	
 	public HomePage(Page page){
 		this.page=page;
