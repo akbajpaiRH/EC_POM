@@ -4,31 +4,21 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 
 import com.microsoft.playwright.*;
+import com.qa.adminCentre.base.baseTest;
 import com.qa.adminCentre.factory.PlaywrightFactory;
 import com.qa.adminCentre.pages.HomePage;
 
-public class HomePageTest {
-	
-	PlaywrightFactory pf;
-	Page page;
-	HomePage homePage;
-	
-	@BeforeTest
-	public void setup() {
-		pf = new PlaywrightFactory();
-		page = pf.initBrowser("chromium");
-		homePage = new HomePage(page);
-	}
+public class HomePageTest extends baseTest{
 	
 	@Test
 	public void titleTest() {
 		String title = homePage.getHomeTitle();
-		Assert.assertEquals(title, "Admin Center");
+		Assert.assertEquals(title, prop.getProperty("title"));
 	}
 	@Test
 	public void urlTest() {
 		String url = homePage.getHomeURL();
-		Assert.assertEquals(url, "https://qa.one.redhat.com/admin-center/");
+		Assert.assertEquals(url, prop.getProperty("url"));
 	}
 	
 	@Test
@@ -36,8 +26,5 @@ public class HomePageTest {
 		String header = homePage.doSearch("Briefing");
 		Assert.assertEquals(header, "All Assets");
 	}
-	@AfterTest
-	public void tearDown() {
-		page.context().browser().close();
-	}
+	
 }
