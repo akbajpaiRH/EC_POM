@@ -22,6 +22,12 @@ public class HomePageTest extends baseTest{
 	}
 	
 	@Test
+	public void feedbackTest() {
+		String res = homePage.giveFeedback("Feedback", "Suggestion");
+		Assert.assertEquals(res, prop.getProperty("feedback"));
+	}
+	
+	@Test
 	public void searchTest() {
 		String header = homePage.doSearch("Briefing");
 		Assert.assertEquals(header, "All Assets");

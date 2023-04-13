@@ -19,7 +19,7 @@ public class baseTest {
 	@BeforeTest
 	public void setup() {
 		pf = new PlaywrightFactory();
-		prop =pf.initProp();
+		prop = pf.initProp();
 		page = pf.initBrowser(prop);
 		homePage = new HomePage(page);
 	}

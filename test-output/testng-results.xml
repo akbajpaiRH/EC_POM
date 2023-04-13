@@ -1,33 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="7385" started-at="2023-04-12T10:30:38Z" finished-at="2023-04-12T10:30:45Z">
+  <suite name="Default suite" duration-ms="11335" started-at="2023-04-13T18:43:35Z" finished-at="2023-04-13T18:43:47Z">
     <groups>
     </groups>
-    <test name="test1" duration-ms="7385" started-at="2023-04-12T10:30:38Z" finished-at="2023-04-12T10:30:45Z">
+    <test name="Default test" duration-ms="11335" started-at="2023-04-13T18:43:35Z" finished-at="2023-04-13T18:43:47Z">
       <class name="com.qa.adminCentre.tests.HomePageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.adminCentre.tests.HomePageTest@9629756]" name="setup" is-config="true" duration-ms="6306" started-at="2023-04-12T10:30:38Z" finished-at="2023-04-12T10:30:44Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.adminCentre.tests.HomePageTest@c81cdd1]" name="setup" is-config="true" duration-ms="8554" started-at="2023-04-13T18:43:35Z" finished-at="2023-04-13T18:43:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="searchTest()[pri:0, instance:com.qa.adminCentre.tests.HomePageTest@9629756]" name="searchTest" duration-ms="1002" started-at="2023-04-12T10:30:44Z" finished-at="2023-04-12T10:30:45Z">
+        <test-method status="PASS" signature="feedbackTest()[pri:0, instance:com.qa.adminCentre.tests.HomePageTest@c81cdd1]" name="feedbackTest" duration-ms="2630" started-at="2023-04-13T18:43:44Z" finished-at="2023-04-13T18:43:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchTest -->
-        <test-method status="PASS" signature="titleTest()[pri:0, instance:com.qa.adminCentre.tests.HomePageTest@9629756]" name="titleTest" duration-ms="3" started-at="2023-04-12T10:30:45Z" finished-at="2023-04-12T10:30:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- titleTest -->
-        <test-method status="PASS" signature="urlTest()[pri:0, instance:com.qa.adminCentre.tests.HomePageTest@9629756]" name="urlTest" duration-ms="0" started-at="2023-04-12T10:30:45Z" finished-at="2023-04-12T10:30:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.adminCentre.tests.HomePageTest@9629756]" name="tearDown" is-config="true" duration-ms="60" started-at="2023-04-12T10:30:45Z" finished-at="2023-04-12T10:30:45Z">
+        </test-method> <!-- feedbackTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.adminCentre.tests.HomePageTest@c81cdd1]" name="tearDown" is-config="true" duration-ms="107" started-at="2023-04-13T18:43:47Z" finished-at="2023-04-13T18:43:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.adminCentre.tests.HomePageTest -->
-    </test> <!-- test1 -->
-  </suite> <!-- Suite1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

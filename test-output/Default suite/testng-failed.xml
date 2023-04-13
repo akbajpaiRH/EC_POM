@@ -5,7 +5,9 @@
     <classes>
       <class name="com.qa.adminCentre.tests.HomePageTest">
         <methods>
+          <include name="urlTest"/>
           <include name="setup"/>
+          <include name="searchTest"/>
           <include name="titleTest"/>
           <include name="tearDown"/>
         </methods>
