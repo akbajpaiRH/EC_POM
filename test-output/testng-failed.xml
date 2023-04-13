@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
-  <test thread-count="5" name="test1(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="com.qa.adminCentre.tests.HomePageTest">
         <methods>
-          <include name="urlTest"/>
           <include name="setup"/>
-          <include name="searchTest"/>
           <include name="titleTest"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.qa.adminCentre.tests.HomePageTest -->
     </classes>
-  </test> <!-- test1(failed) -->
-</suite> <!-- Failed suite [Suite1] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
