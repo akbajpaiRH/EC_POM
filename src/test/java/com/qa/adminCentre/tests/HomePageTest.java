@@ -1,12 +1,9 @@
 package com.qa.adminCentre.tests;
 
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.Test;
 
-import com.microsoft.playwright.*;
 import com.qa.adminCentre.base.baseTest;
-import com.qa.adminCentre.factory.PlaywrightFactory;
-import com.qa.adminCentre.pages.HomePage;
 
 public class HomePageTest extends baseTest{
 	

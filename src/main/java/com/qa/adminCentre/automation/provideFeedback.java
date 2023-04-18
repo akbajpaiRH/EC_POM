@@ -15,6 +15,18 @@ public class provideFeedback {
 
         page.navigate("https://qa.one.redhat.com/admin-center/");
         page.locator("a.pf-c-nav__link").nth(2).click();
+        page.locator("form svg").nth(4).click();
+
+        page.locator("//textarea").nth(0).click();
+        page.locator("//textarea").nth(0).fill("Feedback Test");
+
+        page.locator("//textarea").nth(1).click();
+        page.locator("//textarea").nth(1).fill("Suggestion Test");
+
+        page.locator("//button[@class='pf-c-button pf-m-primary pf-m-progress']").click();
+
+        String str = page.locator("//h4[@class='pf-c-alert__title']").textContent();
+        System.out.println(str);
 	}
 
 }
